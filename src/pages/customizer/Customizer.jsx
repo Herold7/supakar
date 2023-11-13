@@ -7,6 +7,7 @@ import carYellow from '../../assets/img/yellow.png'
 import Nav from '../../components/Nav'
 
 function Customizer() {
+
   const [color, setColor] = useState([carOriginal])
 
   const handleColor = (e) => {
@@ -25,7 +26,7 @@ function Customizer() {
         setColor([carYellow])
         break
       default:
-        setColor([carBlue])
+        setColor([carOriginal])
         break
     }
   }
@@ -34,7 +35,9 @@ function Customizer() {
     <>
       <Nav />
       <main className='customizer'>
-        <Car color={color} />
+        <a href={color} className="glightbox">
+          <Car color={color} />
+        </a>
         <div className="options">
           <h1>Personalisation</h1>
           <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente.</p>
@@ -67,7 +70,7 @@ export default Customizer
 /**
  * Ce composant doit afficher une voiture et un menu de personnalisation
  * Premierement, il faut afficher la voiture avec la couleur par défaut (silver),
- * pour faciliter la manipulation, on va utiliser charger les sources des images
+ * pour faciliter la manipulation, on va charger les sources des images
  * via des imports.
  * 
  * On défini un state pour la couleur de la voiture, par défaut, on lui donne un

@@ -149,7 +149,6 @@ h1 {
 }
 
 .color-selection-item-square {
-  content: '';
   width: 120px;
   height: 80px;
   border-radius: 1vw;

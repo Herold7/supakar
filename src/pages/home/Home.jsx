@@ -20,7 +20,8 @@ function Home() {
       startDelay: 300, // Décalage avant le début de la saisie
       typeSpeed: 100, // Vitesse de saisie
       backSpeed: 100, // Vitesse de retour
-      backDelay: 100 // Délai avant le retour
+      backDelay: 100, // Délai avant le retour
+      loop: true
     });
 
     return () => {
