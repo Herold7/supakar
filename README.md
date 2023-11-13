@@ -118,4 +118,4 @@ Afin de déployer, nous allons devoir réaliser un `build` de notre application 
 npm run build
 ```
 
-N'oublions de faire un commit avec GIT et de pousser notre code vers GitHub. Cela facilitera le déploiement sur Vercel.
+N'oublions de faire un commit avec GIT et de pousser notre code vers GitHub. Cela facilitera le déploiement sur Vercel. Notez que pour certain service commer Vercel ou Netlify, le dossier `build` sera construire sur leur serveur directement.
